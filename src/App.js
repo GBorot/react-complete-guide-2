@@ -1,14 +1,16 @@
-import React, { Component } from "react";
+import React from "react";
 import "./App.css";
 import Person from "./Person/Person";
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
       <div className="App">
         <h1>Hello i'm Gautier !</h1>
         <Person name="Gautier" age="28" />
-        <Person name="Max" age="32" />
+        <Person name="Max" age="32">
+          My hobbies: Music
+        </Person>
         <Person name="Gratiane" age="27" />
       </div>
     );
